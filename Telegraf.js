@@ -5,7 +5,7 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 const express = require('express'); 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8888;
 
 // express 
 app.get('/', (req, res) => {
@@ -38,7 +38,7 @@ app.on('error', (err) => {
 listenOnPort(port);
 
 // Bot config token 
-let token = '7186701501:AAG91wX-NwgVNu8R_8FOzh8u2EFuK3_-Aco'  //replace this part with your bot token
+let token = '7043181859:AAH0V7eXKtYLCCxeMe0sPVpk2-R6VmYma4A'  //replace this part with your bot token
 const bot = new Telegraf(token, { polling: true });
 let Start = new Date();
 
