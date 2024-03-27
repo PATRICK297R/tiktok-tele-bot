@@ -108,8 +108,6 @@ bot.on('message', async (msg) => {
         await bot.sendVideo(From, data.video[0], { caption: title });
         await sleep(3000)
         await bot.sendAudio(From, audio, { caption: title_audio });
-        await sleep(3000)
-        await bot.sendMessage(From, 'Powered by @wtffry');
     } catch (error) {
         bot.sendMessage(From, 'Sorry, an error occurred while downloading the TikTok video.');
         log(`[ ERROR ] ${From}: ${error.message}`, 'red');
